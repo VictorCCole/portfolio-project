@@ -1,4 +1,4 @@
-body{
+body {
     /*background: linear-gradient(-45deg, #F2EEE3, #E9D1D0, #FAE0BA, #F0DED1, #DEC4A7);*/
     background: linear-gradient(to right, #806a60, #5c4033);
     background-size: 400% 400%;
@@ -7,13 +7,15 @@ body{
 }
 
 @keyframes gradient {
-    0%{
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
 }
@@ -21,23 +23,53 @@ body{
 
 .container {
     position: relative;
-  }
-  
-  .title1 {
+}
+
+.title1 {
     color: #EB8C73;
-    font-size: 400%; /*62px*/
+    font-size: 400%;
+    /*62px*/
     position: fixed;
     top: 35%;
     left: 44%;
     transform: translate(-50%, -50%);
-  }
-  
-  .title2 {
+}
+
+.title2 {
     color: #EB8C73;
-    font-size: 550%; /*86px*/
+    font-size: 550%;
+    /*86px*/
     position: fixed;
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-  }
+
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #EB8C73;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #D9755B;
+}

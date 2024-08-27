@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(to right, #806a60, #5c4033);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 96vh;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    /* Smooth scrolling */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #EB8C73;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #D9755B;
+}
+
+.title1 {
+    color: #EB8C73;
+    font-size: 4vw;
+    position: absolute;
+    top: 35vh;
+    left: 44vw;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.title2 {
+    color: #EB8C73;
+    font-size: 5.5vw;
+    position: absolute;
+    top: 44vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    .title1,
+    .title2 {
+        font-size: 6vw;
+        top: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+section {
+    padding: 20px;
+}
+
+#home {
+    height: 100vh;
+    /* This sets the home section to take full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre {
+    margin-top: 10vh;
+    /* This pushes the section down by the height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height to ensure centering */
+    text-align: center;
+    /* Center text horizontally */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.about-text {
+    padding: 30px;
+    color: #EB8C73;
+    font-size: 1.25vw;
+    white-space: normal;
+    /* Permite quebra de linha */
+    word-wrap: break-word;
+    /* Quebra palavras longas, se necessário */
+    margin-left: 30vh;
+    margin-right: 10vh;
+}
+
+.about-image img {
+    max-width: 125%;
+    height: auto;
+    padding: 30px;
+    margin-left: 10vh;
+    /* Add padding for spacing */
+}
